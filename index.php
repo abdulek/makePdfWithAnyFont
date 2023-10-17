@@ -3,7 +3,7 @@
     $output = "this.pdfMake = this.pdfMake || {}; this.pdfMake.vfs = {";
     $phpDir=dir('.');
     while (($file=$phpDir->read())!==false) {
-        if ($file!='..' && $file!='.' && $file!='makefont.php' && $file!='vfs_fonts.js') {
+        if ($file!='..' && $file!='.git' && $file!='makefont.php' && $file!='vfs_fonts.js') {
             $output .= '"';
             $output .= $file;
             $output .= '":"';
